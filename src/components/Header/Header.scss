@@ -1,0 +1,45 @@
+@import "../../sass/variables";
+
+header{
+    background: $bgheader;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header{
+        text-align: center;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        h1{
+            color: $white;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        &__infoUser{
+            display: flex;
+            flex-direction: column;
+            color: $white;
+            border: 1px solid $white;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 10px 20px 10px 50px;
+
+            label{          
+            text-align: left;
+            line-height: 1;
+            margin-bottom: 5px;  
+            }
+
+            button{
+                width: 80px;
+                margin: 0 auto;
+                padding-bottom: 3px;
+                border-radius: 3px;
+            }
+        }
+    }
+}

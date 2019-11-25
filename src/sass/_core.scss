@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+
+/**
+ * Основные стили
+ **/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  @include min-max(320px !important,100% !important, 0 !important);
+  
+}
+
+.wrap {
+  @include min-max(320px, 1070px, 15px);
+}
+
+p {
+  color: $black;
+}
+
+.bg{
+  background: $bgheader;
+}
+
+main{
+  min-height: calc(100vh - 156px);
+  display: flex ;
+  justify-content: center;
+}
+.mainLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+section{
+  margin: 15px 0;
+  height: calc(100vh - $heigthFooter); 
+}
